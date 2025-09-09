@@ -80,7 +80,7 @@ jobs:
         run: |
           mkdir -p /tmp/docker
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: builder_${{ matrix.builder-name }}
           path: /tmp/docker

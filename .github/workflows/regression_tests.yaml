@@ -201,7 +201,7 @@ jobs:
           pip install -r pmacct/test-framework/requirements.txt
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           pattern: '*_docker_images'
           path: /tmp/docker
@@ -260,7 +260,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Download Results Folder
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           pattern: test_results_*
           path: results
