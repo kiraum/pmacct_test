@@ -50,7 +50,7 @@ else
     cd rabbitmq-c-0.13.0 ; mkdir build ; cd build ; cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_INSTALL_LIBDIR=lib .. ; sudo cmake --build . --target install ; cd .. ; cd ..
 fi
 
-git clone --depth 1 -b 1.11.0 --recursive https://github.com/maxmind/libmaxminddb
+git clone --depth 1 -b 1.12.2 --recursive https://github.com/maxmind/libmaxminddb
 cd libmaxminddb ; rm -rf ./.git ; ./bootstrap ; ./configure --prefix=/usr/local/ ; make ; sudo make install ; cd ..
 
 git clone --depth 1 -b 4.14-stable https://github.com/ntop/nDPI
