@@ -144,7 +144,7 @@ jobs:
       PLATFORMS: linux/amd64,linux/arm64
     steps:
       - name: Cleanup disk to maximize runner disk space
-        uses: AdityaGarg8/remove-unwanted-software@v3 #easimon/maximize-build-space@v10
+        uses: AdityaGarg8/remove-unwanted-software@v5 #easimon/maximize-build-space@v10
         with:
           remove-android: true
           remove-dotnet: True
