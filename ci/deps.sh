@@ -35,7 +35,7 @@ mkdir -p /tmp
 cd /tmp
 
 # Dependencies (not fulfilled by Dockerfile)
-git clone --depth 1 -b v2.14 https://github.com/akheron/jansson
+git clone --depth 1 -b v2.14.1 https://github.com/akheron/jansson
 cd jansson ; rm -rf ./.git ; autoreconf -i ; ./configure --prefix=/usr/local/ ; make ; sudo make install ; cd ..
 
 git clone --depth 1 -b v2.6.1 https://github.com/confluentinc/librdkafka
